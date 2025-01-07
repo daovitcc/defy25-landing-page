@@ -38,7 +38,7 @@ export default function Timer() {
     <div className='font-yapariBold'>
       <div className='flex justify-center items-center h-[90vh]'>
         {Object.keys(timeLeft).length > 0 ? (
-          <div className='flex flex-col justify-center space-y-8 md:space-y-0  items-center md:flex-row text-8xl space-x-8'>
+          <div className='flex flex-col justify-center space-y-8 md:space-y-0  items-center md:flex-row text-8xl sm:space-x-8'>
             <div className='bg-white p-4 rounded-xl'>{timeLeft.hours + timeLeft.days*24<10 && "0"}{timeLeft.hours + timeLeft.days*24}h</div>
             <div className='bg-white p-4 rounded-xl'>{timeLeft.minutes<10 && "0"}{timeLeft.minutes}m</div>
             <div className='bg-white p-4 rounded-xl'>{timeLeft.seconds<10 && "0"}{timeLeft.seconds}s</div>
