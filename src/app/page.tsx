@@ -38,10 +38,10 @@ export default function Timer() {
     <div className='font-yapariBold'>
       <div className='flex justify-center items-center h-[90vh]'>
         {Object.keys(timeLeft).length > 0 ? (
-          <div className='text-8xl space-x-8'>
-            <span className='bg-white p-4 rounded-xl'>{timeLeft.hours + timeLeft.days*24<10 && "0"}{timeLeft.hours + timeLeft.days*24}h</span>
-            <span className='bg-white p-4 rounded-xl'>{timeLeft.minutes<10 && "0"}{timeLeft.minutes}m</span>
-            <span className='bg-white p-4 rounded-xl'>{timeLeft.seconds<10 && "0"}{timeLeft.seconds}s</span>
+          <div className='flex flex-col justify-center items-center space-y-8 md:flex-row text-8xl space-x-8'>
+            <div className='bg-white p-4 rounded-xl'>{timeLeft.hours + timeLeft.days*24<10 && "0"}{timeLeft.hours + timeLeft.days*24}h</div>
+            <div className='bg-white p-4 rounded-xl'>{timeLeft.minutes<10 && "0"}{timeLeft.minutes}m</div>
+            <div className='bg-white p-4 rounded-xl'>{timeLeft.seconds<10 && "0"}{timeLeft.seconds}s</div>
           </div>
         ) : (
           <span>Event has started!</span>
