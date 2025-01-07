@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/defy25-logo.jpg" />
+        <link rel="icon" href="/defy25-Logo.jpg" />
       </head>
       <body
         className={`${yapariBold.variable} antialiased`}
