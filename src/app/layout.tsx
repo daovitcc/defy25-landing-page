@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Head from "next/head";
 
 const yapariBold = localFont({
   src:[{
@@ -17,14 +16,6 @@ export const metadata: Metadata = {
   description: "A countdown timer for DeFy'25",
 };
 
-export function Favicon() {
-  return (
-    <Head>
-      <link rel="icon" href="/defy25-logo.jpg" />
-    </Head>
-  );
-}
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -32,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/defy25-logo.jpg" />
+      </head>
       <body
         className={`${yapariBold.variable} antialiased`}
       >
