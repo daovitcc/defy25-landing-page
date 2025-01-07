@@ -4,7 +4,12 @@ import { useEffect, useState } from 'react';
 
 const calculateTimeLeft = () => {
   const difference = +new Date('2025-01-11T11:00:00') - +new Date();
-  let timeLeft = {};
+  let timeLeft = {
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  };
 
   if (difference > 0) {
     timeLeft = {
